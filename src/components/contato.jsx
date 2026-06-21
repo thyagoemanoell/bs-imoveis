@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
 
 // ─── CONFIGURAÇÃO EMAILJS ────────────────────────────────────────────
 // 1. Crie sua conta em https://www.emailjs.com (gratuito)
@@ -7,9 +10,6 @@ import emailjs from '@emailjs/browser';
 // 3. Crie um Email Template e copie o Template ID
 // 4. Em Account > API Keys, copie sua Public Key
 // Substitua os valores abaixo pelos seus:
-const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
 // ─────────────────────────────────────────────────────────────────────
 
 const estadoInicial = { nome: '', email: '', telefone: '', mensagem: '' };
