@@ -6,6 +6,9 @@ const WaIcon = () => (
   </svg>
 );
 
+// Lógica aplicada a responsividade Mobile
+// quando o site está no mobile ele se adapta a tela do smartphone sendo assim aparecendo as informação da tela principal. 
+
 function Navbar({ onAbrirContato }) {
   const [menuAberto, setMenuAberto] = useState(false);
 
@@ -22,9 +25,11 @@ function Navbar({ onAbrirContato }) {
             <rect x="14" y="21" width="8" height="7" rx="1" fill="#C8963E" opacity="0.6" />
           </svg>
         </div>
-        <div className="nav-logo-text">
-          {/* EDITAR: nome e cargo */}
-          <div className="nav-logo-name">MARCOS OLIVEIRA</div>
+        <div className="nav-logo-text"
+        >
+          {/* Campo Nome do Corretor */}
+
+          <div className="nav-logo-name">Bruno Sena</div>
           <div className="nav-logo-cargo">Corretor de Imóveis</div>
         </div>
       </div>
@@ -37,13 +42,14 @@ function Navbar({ onAbrirContato }) {
         <li><a href="#rodape">Contato</a></li>
       </ul>
 
-      {/* EDITAR: número WhatsApp */}
-      <a className="nav-wa" href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+      {/* Campo de Contato de WhatsApp */}
+      <a className="nav-wa" href="https://wa.me/5598984655966" target='blank' rel="noreferrer">
         <WaIcon />
-        (11) 99999-9999
+        (98) 98465-5966
       </a>
 
-      {/* Menu Hambúrguer quando está em responsividade  */}
+      {/* Menu Hamburguer quando estiver em responsividade */}
+
       <button
         className={`hamburger${menuAberto ? ' aberto' : ''}`}
         onClick={() => setMenuAberto(!menuAberto)}
@@ -63,16 +69,18 @@ function Navbar({ onAbrirContato }) {
             <li><a href="#depoimentos" onClick={fecharMenu}>Depoimentos</a></li>
             <li><a href="#rodape" onClick={fecharMenu}>Contato</a></li>
           </ul>
-          {/* EDITAR: número WhatsApp */}
+          
+          {/* Contato do WhatsApp */}
+
           <a
             className="btn-gold"
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5598984655966"
             target="_blank"
             rel="noreferrer"
             onClick={fecharMenu}
           >
             <WaIcon />
-            (11) 99999-9999
+            (98) 98465-5966
           </a>
         </div>
       )}

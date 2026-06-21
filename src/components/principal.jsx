@@ -18,15 +18,17 @@ function Principal() {
         <div className="hero-overlay" />
 
         <div className="hero-left">
-          {/* EDITAR: eyebrow */}
+          
+          {/* frase de introdução  */}
+
           <div className="hero-eyebrow">Realize o seu melhor negócio</div>
 
-          {/* EDITAR: título — use <span className="destaque"> para colorir parte do texto */}
+          {/* campo título */}
           <h1 className="hero-title">
             Mais que imóveis,<br />realizo <span className="destaque">sonhos.</span>
           </h1>
 
-          {/* EDITAR: subtítulo */}
+          {/* campo subtítulo */}
           <p className="hero-sub">
             Especialista em ajudar você a comprar, vender ou alugar
             o imóvel ideal com segurança, transparência e as melhores condições.
@@ -34,26 +36,27 @@ function Principal() {
 
           <div className="hero-btns">
             <a className="btn-gold" href="#imoveis">Ver imóveis →</a>
+            
             {/* EDITAR: link WhatsApp */}
-            <a className="btn-outline-white" href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+
+            <a className="btn-outline-white" href="https://wa.me/5598984655966" target="_blank" rel="noreferrer">
               <WaIcon />
-              Falar Comigo
+              Fale Comigo
             </a>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          BARRA DE BUSCA
-          EDITAR: opções dos selects
-      ════════════════════════════════════ */}
+      {/* campo de busca */}
       <div id="busca">
         <div className="busca-card">
           <p className="busca-titulo">Encontre o imóvel ideal</p>
 
           <div className="busca-campo">
             <label>Tipo de imóvel</label>
-            {/* EDITAR: opções */}
+            
+            {/* campo de opções */}
+
             <select>
               <option value="">Selecione</option>
               <option>Casa</option>
@@ -91,6 +94,7 @@ function Principal() {
             </select>
           </div>
 
+          {/* campo de resposta caso o usuario consiga encontrar um imovel ou loteamento desejado */}
           <button className="btn-buscar" onClick={() => alert('Configure aqui a busca dos seus imóveis!')}>
             <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
               <circle cx="11" cy="11" r="8" />
@@ -101,10 +105,7 @@ function Principal() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════
-          SOBRE MIM
-          EDITAR: foto, nome, bio, anos e os 4 diferenciais
-      ════════════════════════════════════ */}
+      {/* campos de foto, nome, bio, anos e os 4 diferenciais */}
       <section id="sobre">
         <div className="sobre-grid">
 
@@ -121,7 +122,7 @@ function Principal() {
               </div>
             </div>
 
-            {/* EDITAR: número de anos de experiência */}
+            {/* campo de tempo de experiência */}
             <div className="exp-badge">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.6" color="#C8963E">
                 <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#C8963E" strokeWidth="1.6" />
@@ -136,13 +137,14 @@ function Principal() {
           <div>
             <div className="sobre-label">Sobre Mim</div>
 
-            {/* EDITAR: título da seção sobre */}
+            {/* Campo do sobre mim do corretor  */}
             <h2 className="sobre-titulo">
               Prazer, eu sou
-              <span className="destaque">Marcos Oliveira.</span>
+              <span className="destaque">Bruno Sena.</span>
             </h2>
 
-            {/* EDITAR: bio */}
+            {/* campo de biografia do corretor */}
+
             <p className="sobre-bio">
               Corretor de imóveis apaixonado pelo que faz e com mais de 5 anos
               de experiência no mercado imobiliário. Meu compromisso é oferecer
@@ -150,8 +152,10 @@ function Principal() {
               encontrar as melhores oportunidades.
             </p>
 
-            {/* EDITAR: 4 diferenciais — ícone, título e descrição */}
+            {/* Campo com 4 diferenciais: "ícone, título e descrição" */}
             <div className="diferenciais">
+              
+              {/* icone de segurança */}
 
               <div className="dif-item">
                 <svg className="dif-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -161,6 +165,8 @@ function Principal() {
                 <div className="dif-desc">Negociações seguras e com total transparência.</div>
               </div>
 
+              {/* icone de atendimento */}
+
               <div className="dif-item">
                 <svg className="dif-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -169,6 +175,8 @@ function Principal() {
                 <div className="dif-desc">Acompanhamento completo em todas as etapas.</div>
               </div>
 
+              {/* icone de casa */}
+
               <div className="dif-item">
                 <svg className="dif-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -176,6 +184,8 @@ function Principal() {
                 <div className="dif-nome">Melhores Oportunidades</div>
                 <div className="dif-desc">Imóveis selecionados com as melhores condições.</div>
               </div>
+
+              {/* icone de pos venda */}
 
               <div className="dif-item">
                 <svg className="dif-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -191,15 +201,14 @@ function Principal() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          IMÓVEIS EM DESTAQUE
-          EDITAR: adicione/remova cards
-      ════════════════════════════════════ */}
+      {/* campo de cadastrar imóveis, loteamentos, compra e venda */}
       <section id="imoveis">
         <div className="imoveis-header">
           <div>
             <div className="imoveis-eyebrow">Imóveis em destaque</div>
-            {/* EDITAR: título */}
+            
+            {/* campo título  */}
+
             <h2 className="imoveis-titulo">Encontre seu próximo imóvel</h2>
           </div>
           <a className="btn-ver-todos" href="#cta">Ver todos os imóveis →</a>
@@ -207,9 +216,12 @@ function Principal() {
 
         <div className="imoveis-grid">
 
-          {/* ── CARD 1 ── */}
+          {/* 1 campo de cadastro do imovel */}
+
           <div className="card-imovel">
+            
             {/* EDITAR: imagem — substitua por <img src="foto.jpg" alt="..." style={{width:'100%',height:'200px',objectFit:'cover'}} /> */}
+
             <div className="ci-img">
               <div className="ci-ph">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="0.9">
@@ -217,8 +229,10 @@ function Principal() {
                 </svg>
                 <span>Foto do imóvel</span>
               </div>
-              {/* EDITAR: classe "venda" ou "aluguel" */}
-              <span className="ci-badge venda">À Venda</span>
+              
+              {/* campo de classe "venda", "aluguel", "loteamento" e "imóvel" */}
+
+              <span className="ci-badge venda">Imóvel</span>
               <div className="ci-fav">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -226,7 +240,9 @@ function Principal() {
               </div>
             </div>
             <div className="ci-body">
-              {/* EDITAR: preço, nome e informações */}
+              
+              {/* Campo de descrição, nome e localização */}
+
               <div className="ci-preco">R$ 850.000</div>
               <div className="ci-nome">Apartamento – Vila Mariana</div>
               <div className="ci-infos">
@@ -238,7 +254,8 @@ function Principal() {
             </div>
           </div>
 
-          {/* ── CARD 2 ── */}
+          {/* 2 campo de cadastro do imovel */}
+
           <div className="card-imovel">
             <div className="ci-img">
               <div className="ci-ph">
@@ -265,7 +282,8 @@ function Principal() {
             </div>
           </div>
 
-          {/* ── CARD 3 ── */}
+          {/* 3 campo de cadastro do imovel */}
+
           <div className="card-imovel">
             <div className="ci-img">
               <div className="ci-ph">
@@ -274,8 +292,10 @@ function Principal() {
                 </svg>
                 <span>Foto do imóvel</span>
               </div>
-              {/* EDITAR: badge "aluguel" */}
-              <span className="ci-badge aluguel">Para Alugar</span>
+              
+              {/* campo de informação do imóvel */}
+
+              <span className="ci-badge aluguel">Loteamento</span>
               <div className="ci-fav">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -299,37 +319,45 @@ function Principal() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          DEPOIMENTOS
-          EDITAR: adicione/remova cards
-      ════════════════════════════════════ */}
+      {/* campo de depoimentos de clientes do corretor */}
+
       <section id="depoimentos">
         <div className="dep-eyebrow">Depoimentos</div>
-        {/* EDITAR: título */}
+        
+        {/* campo onde os clientes falam sobre o corretor */}
+
         <h2 className="dep-titulo">O que meus clientes dizem</h2>
 
         <div className="dep-grid">
 
-          {/* ── DEPOIMENTO 1 ── */}
+          {/* 1 depoimento de cliente */}
+
           <div className="card-dep">
             <span className="dep-aspas">"</span>
-            {/* EDITAR: texto */}
+            
+            {/* campo texto */}
+
             <p className="dep-texto">
               Excelente profissional! Me ajudou em todo o processo de compra do
               meu apartamento, sempre muito atencioso e transparente.
             </p>
             <div className="dep-autor">
+
               {/* EDITAR: substitua por <img src="foto.jpg"> ou use emoji/iniciais */}
+
               <div className="dep-foto">👤</div>
               <div>
-                {/* EDITAR: nome e cidade */}
+                
+                {/* campo de nome e cidade */}
+
                 <div className="dep-nome">Juliana S.</div>
                 <div className="dep-cidade">São Paulo, SP</div>
               </div>
             </div>
           </div>
 
-          {/* ── DEPOIMENTO 2 ── */}
+          {/* 2 depoimento de cliente */}
+
           <div className="card-dep">
             <span className="dep-aspas">"</span>
             <p className="dep-texto">
@@ -345,7 +373,8 @@ function Principal() {
             </div>
           </div>
 
-          {/* ── DEPOIMENTO 3 ── */}
+          {/* 3 depoimento de cliente */}
+
           <div className="card-dep">
             <span className="dep-aspas">"</span>
             <p className="dep-texto">
@@ -364,10 +393,7 @@ function Principal() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════
-          CTA STRIP
-          EDITAR: título, subtítulo, link WhatsApp
-      ════════════════════════════════════ */}
+      {/* Campo de Conato que inclue título, subtítulo, link WhatsApp */}
       <section id="cta">
         <div className="cta-left">
           <div className="cta-icon">
@@ -378,17 +404,20 @@ function Principal() {
               <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" />
             </svg>
           </div>
+
           <div>
-            {/* EDITAR: título e subtítulo do CTA */}
+            
+            {/* campo de introdução a conversa sobre o seu negocio */}
+
             <div className="cta-titulo">Vamos conversar sobre o seu próximo negócio?</div>
             <div className="cta-sub">Estou pronto para te ajudar a realizar o melhor negócio imobiliário.</div>
           </div>
         </div>
 
-        {/* EDITAR: link WhatsApp */}
-        <a className="btn-gold" href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">
+        {/* campo do link WhatsApp */}
+        <a className="btn-gold" href="https://wa.me/5598984655966" target="_blank" rel="noreferrer">
           <WaIcon />
-          Falar Comigo
+          Fale Comigo
         </a>
       </section>
     </>
