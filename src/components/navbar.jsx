@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logobs from "../assets/logo bs imobiliaria/Logo BS atualizado.png"
+import logobs1 from "../assets/logo bs imobiliaria/Logo BS-.png"
 
 const WaIcon = () => (
   <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -19,14 +19,14 @@ function Navbar({ onAbrirContato }) {
     <nav>
       <div className="nav-logo">
         <div className="nav-logo-icon">
-          <img src={logobs} alt="Logo Bs Atualizado" />
+          <img src={logobs1} alt="Logo Bs Atualizado" />
         </div>
         <div className="nav-logo-text"
         >
           {/* Campo Nome do Corretor */}
 
-          <div className="nav-logo-name">Bruno Sena</div>
-          <div className="nav-logo-cargo">Corretor de Imóveis</div>
+          <div className="nav-logo-name">BS Imóveis</div>
+          <div className="nav-logo-cargo">Consultoria e Especialista em Loteamento</div>
         </div>
       </div>
 

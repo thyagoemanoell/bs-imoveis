@@ -33,7 +33,7 @@ nav {
 .nav-logo-icon{
   width: 70px;
   height: 90px;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 .nav-logo-text { line-height: 1.15; }
 
@@ -705,10 +705,14 @@ footer {
   .footer-social-wrap { justify-content: center; }
 }
 
-.footer-logo { display: flex; align-items: center; gap: 10px; }
+.footer-logo{
+  width: 60px;
+  height: 60px;
+}
 .footer-logo-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem; font-weight: 700; color: var(--branco);
+  margin-left: 80px;
 }
 .footer-logo-cargo { font-size: 0.58rem; color: var(--ouro); letter-spacing: 0.1em; text-transform: uppercase; }
 

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import logobs2 from "../assets/logo bs imobiliaria/Logo BS-.png"
 
 // ─── mesmas chaves do contato.jsx ───
 const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
@@ -120,15 +121,11 @@ function Footer() {
       {/* campo do rodapé ── */}
       <div className="footer-barra">
         <div className="footer-logo">
-          <svg width="30" height="30" viewBox="0 0 36 36" fill="none">
-            <path d="M6 18L18 7L30 18" stroke="#C8963E" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M9 15.5V28H27V15.5" stroke="#C8963E" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            <rect x="14" y="21" width="8" height="7" rx="1" fill="#C8963E" opacity="0.6" />
-          </svg>
+          <img src={logobs2} alt="Logo BS" />
           <div>
             {/* campo de nome e do cargo no footer */}
-            <div className="footer-logo-name">Bruno Sena</div>
-            <div className="footer-logo-cargo">Corretor de Imóveis</div>
+            <div className="footer-logo-name">BS Imóveis</div>
+            <div className="footer-logo-cargo">Consultoria e Especialista em Loteamento</div>
           </div>
         </div>
 
