@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logobs from "../assets/logo bs imobiliaria/Logo BS atualizado.png"
 
 const WaIcon = () => (
   <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -18,12 +19,7 @@ function Navbar({ onAbrirContato }) {
     <nav>
       <div className="nav-logo">
         <div className="nav-logo-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="36" height="36" rx="6" fill="none" />
-            <path d="M6 18L18 7L30 18" stroke="#C8963E" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M9 15.5V28H27V15.5" stroke="#C8963E" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-            <rect x="14" y="21" width="8" height="7" rx="1" fill="#C8963E" opacity="0.6" />
-          </svg>
+          <img src={logobs} alt="Logo Bs Atualizado" />
         </div>
         <div className="nav-logo-text"
         >
