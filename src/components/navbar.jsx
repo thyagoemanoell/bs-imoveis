@@ -56,30 +56,27 @@ function Navbar({ onAbrirContato }) {
         <span />
       </button>
 
-      {menuAberto && (
-        <div className="mobile-menu">
-          <ul>
-            <li><a href="#hero" onClick={fecharMenu}>Início</a></li>
-            <li><a href="#sobre" onClick={fecharMenu}>Sobre</a></li>
-            <li><a href="#imoveis" onClick={fecharMenu}>Imóveis</a></li>
-            <li><a href="#depoimentos" onClick={fecharMenu}>Depoimentos</a></li>
-            <li><a href="#rodape" onClick={fecharMenu}>Contato</a></li>
-          </ul>
-          
-          {/* Contato do WhatsApp */}
+      <div className={`mobile-menu${menuAberto ? ' aberto' : ''}`}>
+        <ul>
+          <li><a href="#hero" onClick={fecharMenu}>Início</a></li>
+          <li><a href="#sobre" onClick={fecharMenu}>Sobre</a></li>
+          <li><a href="#imoveis" onClick={fecharMenu}>Imóveis</a></li>
+          <li><a href="#depoimentos" onClick={fecharMenu}>Depoimentos</a></li>
+          <li><a href="#rodape" onClick={fecharMenu}>Contato</a></li>
+        </ul>
 
-          <a
-            className="btn-gold"
-            href="https://wa.me/5598984655966"
-            target="_blank"
-            rel="noreferrer"
-            onClick={fecharMenu}
-          >
-            <WaIcon />
-            (98) 98465-5966
-          </a>
-        </div>
-      )}
+        {/* Contato do WhatsApp */}
+        <a
+          className="btn-gold"
+          href="https://wa.me/5598984655966"
+          target="_blank"
+          rel="noreferrer"
+          onClick={fecharMenu}
+        >
+          <WaIcon />
+          (98) 98465-5966
+        </a>
+      </div>
     </nav>
   );
 }

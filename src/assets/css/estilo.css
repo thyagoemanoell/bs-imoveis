@@ -705,14 +705,20 @@ footer {
   .footer-social-wrap { justify-content: center; }
 }
 
-.footer-logo{
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-logo img {
   width: 60px;
   height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .footer-logo-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem; font-weight: 700; color: var(--branco);
-  margin-left: 80px;
 }
 .footer-logo-cargo { font-size: 0.58rem; color: var(--ouro); letter-spacing: 0.1em; text-transform: uppercase; }
 
@@ -770,10 +776,10 @@ footer {
   width: 22px; height: 2px;
   background: var(--branco);
   border-radius: 2px;
-  transition: transform 0.25s, opacity 0.2s;
+  transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.25s ease;
 }
 .hamburger.aberto span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.aberto span:nth-child(2) { opacity: 0; }
+.hamburger.aberto span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.aberto span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ── Menu mobile ── */
@@ -788,8 +794,27 @@ footer {
   gap: 1.2rem;
   z-index: 199;
   box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.32s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mobile-menu.aberto {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .mobile-menu ul { list-style: none; }
+.mobile-menu ul li {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mobile-menu.aberto ul li:nth-child(1) { opacity: 1; transform: translateX(0); transition-delay: 0.05s; }
+.mobile-menu.aberto ul li:nth-child(2) { opacity: 1; transform: translateX(0); transition-delay: 0.10s; }
+.mobile-menu.aberto ul li:nth-child(3) { opacity: 1; transform: translateX(0); transition-delay: 0.15s; }
+.mobile-menu.aberto ul li:nth-child(4) { opacity: 1; transform: translateX(0); transition-delay: 0.20s; }
+.mobile-menu.aberto ul li:nth-child(5) { opacity: 1; transform: translateX(0); transition-delay: 0.25s; }
 .mobile-menu ul li a {
   display: block;
   padding: 0.85rem 0;
