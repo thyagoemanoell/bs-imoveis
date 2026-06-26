@@ -284,9 +284,15 @@ nav {
 }
 .sobre-titulo .destaque { color: var(--ouro); display: block; }
 
+.creci{
+  font-size: 18px;
+  margin-left: auto;
+}
+
 .sobre-bio {
   font-size: 0.93rem; color: var(--cinza-text);
   line-height: 1.8; margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .diferenciais {

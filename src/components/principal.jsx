@@ -1,4 +1,5 @@
 import casaHero from '../assets/img/casa-hero.jpg';
+import fotoCorretor from '../assets/foto perfil/Captura de Tela 2026-06-26 às 05.50.52.png';
 
 const WaIcon = () => (
   <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -110,16 +111,8 @@ function Principal() {
         <div className="sobre-grid">
 
           <div className="corretor-foto-wrap">
-            {/* EDITAR: substitua por:
-                <img src="foto-corretor.jpg" alt="Marcos Oliveira" style={{width:'100%',height:'100%',objectFit:'cover'}} />
-            */}
             <div className="corretor-foto">
-              <div className="foto-ph">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="0.8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                <span>Foto do corretor</span>
-              </div>
+              <img src={fotoCorretor} alt="Bruno Sena" style={{width:'100%',height:'100%',objectFit:'cover'}} />
             </div>
 
             {/* campo de tempo de experiência */}
@@ -129,7 +122,7 @@ function Principal() {
               </svg>
               <div>
                 <div className="exp-num">5+</div>
-                <div className="exp-texto">Anos de experiência<br />no mercado imobiliário</div>
+                <div className="exp-texto">Anos de experiência<br />no mercado como Especialista em Loteamento</div>
               </div>
             </div>
           </div>
@@ -141,18 +134,21 @@ function Principal() {
             <h2 className="sobre-titulo">
               Prazer, eu sou
               <span className="destaque">Bruno Sena.</span>
+              <span className="creci">CRECI 6871</span>
             </h2>
 
             {/* campo de biografia do corretor */}
 
             <p className="sobre-bio">
-              Corretor de imóveis apaixonado pelo que faz e com mais de 5 anos
-              de experiência no mercado imobiliário. Meu compromisso é oferecer
-              um atendimento personalizado, entendendo suas necessidades para
-              encontrar as melhores oportunidades.
+              Sou corretor e <strong>Especialista em Loteamento.</strong> Atualmente faço parte 
+              da equipe do Grupo de Loteamento <strong>São Gonçalo.</strong> Com minha experiência, tenho a capacidade de ajudar a conquistar
+              o seu maior sonho: a casa própria, com transparência e confiabilidade. Meu comprimisso é ofecerecer um atendimento com qualidade buscando as melhores
+              oportunidades. Atuo nas grandes cidades como: <strong>São Luís - Ma, Belém - PA e Teresina - PI</strong>, sempre propocionando
+              um serviço confiável e personalizado.
             </p>
 
             {/* Campo com 4 diferenciais: "ícone, título e descrição" */}
+            
             <div className="diferenciais">
               
               {/* icone de segurança */}
