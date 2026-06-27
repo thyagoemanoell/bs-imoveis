@@ -141,7 +141,7 @@ function Principal() {
 
             <p className="sobre-bio">
               Sou corretor e <strong>Especialista em Loteamento.</strong> Atualmente faço parte 
-              da equipe do Grupo de Loteamento <strong>São Gonçalo.</strong> Com minha experiência, tenho a capacidade de ajudar a conquistar
+              do Grupo de Loteamento <strong>São Gonçalo.</strong> Com minha experiência, tenho a capacidade de ajudar a conquistar
               o seu maior sonho: a casa própria, com transparência e confiabilidade. Meu comprimisso é ofecerecer um atendimento com qualidade buscando as melhores
               oportunidades. Atuo nas grandes cidades como: <strong>São Luís - Ma, Belém - PA e Teresina - PI</strong>, sempre propocionando
               um serviço confiável e personalizado.
