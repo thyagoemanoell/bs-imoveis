@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
+
+// const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
+// const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
+// const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
 
 // ─── CONFIGURAÇÃO EMAILJS ────────────────────────────────────────────
 // 1. Crie sua conta em https://www.emailjs.com (gratuito)
@@ -12,11 +13,10 @@ const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
 // Substitua os valores abaixo pelos seus:
 // ─────────────────────────────────────────────────────────────────────
 
-const estadoInicial = { nome: '', email: '', telefone: '', mensagem: '' };
-
 function Contato({ aberto, onFechar }) {
+  const dadosPessoais = { nome: '', email: '', telefone: '', mensagem: '' };
   const formRef = useRef(null);
-  const [campos, setCampos] = useState(estadoInicial);
+  const [campos, setCampos] = useState(dadosPessoais);
   const [status, setStatus] = useState(null); // null | 'enviando' | 'ok' | 'erro'
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Contato({ aberto, onFechar }) {
     } else {
       document.body.style.overflow = '';
       setStatus(null);
-      setCampos(estadoInicial);
+      setCampos(dadosPessoais);
     }
     return () => { document.body.style.overflow = ''; };
   }, [aberto]);
@@ -50,7 +50,7 @@ function Contato({ aberto, onFechar }) {
       .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY)
       .then(() => {
         setStatus('ok');
-        setCampos(estadoInicial);
+        setCampos(dadosPessoais);
       })
       .catch(() => setStatus('erro'));
   };
