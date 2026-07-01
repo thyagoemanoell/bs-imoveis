@@ -47,7 +47,12 @@ function Contato({ aberto, onFechar }) {
     setStatus('enviando');
 
     emailjs
-      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY)
+      .sendForm(
+        import.meta.env.EMAILJS_SERVICE_ID, 
+        import.meta.env.EMAILJS_TEMPLATE_ID, 
+        formRef.current, 
+        import.meta.env.EMAILJS_PUBLIC_KEY
+      )
       .then(() => {
         setStatus('ok');
         setCampos(dadosPessoais);
