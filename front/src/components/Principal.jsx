@@ -7,7 +7,7 @@ const WaIcon = () => (
   </svg>
 );
 
-function Principal() {
+function Principal({ onNavegar }) {
   return (
     <>
       {/* ═══════════════════════════════════
@@ -140,11 +140,10 @@ function Principal() {
             {/* campo de biografia do corretor */}
 
             <p className="sobre-bio">
-              Sou corretor e <strong>Especialista em Loteamento.</strong> Atualmente faço parte 
-              do Grupo de Loteamento <strong>São Gonçalo.</strong> Com minha experiência, tenho a capacidade de ajudar a conquistar
-              o seu maior sonho: a casa própria, com transparência e confiabilidade. Meu comprimisso é ofecerecer um atendimento com qualidade buscando as melhores
-              oportunidades. Atuo nas grandes cidades como: <strong>São Luís - Ma, Belém - PA e Teresina - PI</strong>, sempre propocionando
-              um serviço confiável e personalizado.
+              Especialista do grupo de loteamentos <strong>São Gonçalo</strong>, atuando nos mercados de <strong>São Luís - MA, Belém - PA e Teresina - PI</strong>, com foco no segmento de loteamentos.
+              Atuação profissional é pautada por três príncipios instituicionais: <strong>transparência nas negociações, segurança júridica e patrimonial, e confiabilidade em todas as etapas do processo de aquisição.</strong>
+              O atendimento é conduzido de forma consultiva e personalizada, com o objetivo de assegurar que cada cliente tenha acesso às melhores oportunidades do mercado, aliado a um suporte técnico qualificado do início ao fim da negociação.
+              Nosso compromisso é viabilziar, com solidez e segurança, a realização de um dos maiores objetivos de vida: a conquista da casa própria. 
             </p>
 
             {/* Campo com 4 diferenciais: "ícone, título e descrição" */}
@@ -207,7 +206,7 @@ function Principal() {
 
             <h2 className="imoveis-titulo">Encontre seu próximo imóvel</h2>
           </div>
-          <a className="btn-ver-todos" href="#cta">Ver todos os imóveis →</a>
+          <a className="btn-ver-todos" href="#imoveis-lista" onClick={(e) => { e.preventDefault(); onNavegar('imoveis'); }}>Ver todos os imóveis →</a>
         </div>
 
         <div className="imoveis-grid">
@@ -255,15 +254,14 @@ function Principal() {
                 </svg>
                 <span>Foto do imóvel</span>
               </div>
-              <span className="ci-badge venda">À Venda</span>
+              <span className="ci-badge venda">Loteamento</span>
             </div>
             <div className="ci-body">
               <div className="ci-preco">R$ 1.650.000</div>
               <div className="ci-nome">Casa em Condomínio – Alphaville</div>
               <div className="ci-infos">
-                <span>🛏 3 suítes</span>
+                <span>📍 3 suítes</span>
                 <span>📐 160m²</span>
-                <span>🚗 2 vagas</span>
               </div>
             </div>
           </div>
@@ -281,7 +279,7 @@ function Principal() {
               
               {/* campo de informação do imóvel */}
 
-              <span className="ci-badge aluguel">Loteamento</span>
+              <span className="ci-badge aluguel">À Venda</span>
             </div>
             <div className="ci-body">
               <div className="ci-preco">

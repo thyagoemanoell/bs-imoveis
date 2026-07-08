@@ -390,6 +390,7 @@ nav {
 }
 .ci-badge.venda { background: var(--ouro); color: var(--azul-escuro); }
 .ci-badge.aluguel { background: #2A6496; color: var(--branco); }
+.ci-badge.loteamento { background: #3C7A5B; color: var(--branco); }
 
 .ci-fav {
   position: absolute; top: 12px; right: 12px;
@@ -416,6 +417,45 @@ nav {
   border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.8rem;
 }
 .ci-infos span { display: flex; align-items: center; gap: 4px; }
+
+/* ═══════════════════════════════════
+   PÁGINA — TODOS OS IMÓVEIS
+════════════════════════════════════ */
+.pagina-imoveis-topo {
+  background: var(--azul-escuro);
+  padding: 150px 4vw 70px;
+  text-align: center;
+}
+
+.pagina-imoveis-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem); font-weight: 800;
+  color: var(--branco); margin-bottom: 0.8rem;
+}
+.pagina-imoveis-titulo .destaque { color: var(--ouro); }
+
+.pagina-imoveis-sub {
+  font-size: 0.95rem; color: rgba(255,255,255,0.6);
+  max-width: 560px; margin: 0 auto; line-height: 1.7;
+}
+
+.pagina-imoveis-filtro {
+  padding: 0 4vw;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+#imoveis-lista {
+  background: var(--azul-escuro);
+  padding: 0 4vw 90px;
+}
+
+.pagina-imoveis-contagem {
+  font-size: 0.82rem; color: rgba(255,255,255,0.5);
+  margin-bottom: 2rem;
+}
 
 /* ═══════════════════════════════════
    DEPOIMENTOS

@@ -10,10 +10,16 @@ const WaIcon = () => (
 // Lógica aplicada a responsividade Mobile
 // quando o site está no mobile ele se adapta a tela do smartphone sendo assim aparecendo as informação da tela principal. 
 
-function Navbar({ onAbrirContato }) {
+function Navbar({ onAbrirContato, paginaAtual, onNavegar }) {
   const [menuAberto, setMenuAberto] = useState(false);
 
   const fecharMenu = () => setMenuAberto(false);
+
+  const irPara = (pagina, hash) => (e) => {
+    e.preventDefault();
+    onNavegar(pagina, hash);
+    fecharMenu();
+  };
 
   return (
     <nav>
@@ -31,11 +37,10 @@ function Navbar({ onAbrirContato }) {
       </div>
 
       <ul className="nav-links">
-        <li><a href="#hero" className="ativo">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#imoveis">Imóveis</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#rodape">Contato</a></li>
+        <li><a href="#hero" className={paginaAtual === 'home' ? 'ativo' : ''} onClick={irPara('home', 'hero')}>Início</a></li>
+        <li><a href="#sobre" onClick={irPara('home', 'sobre')}>Sobre</a></li>
+        <li><a href="#depoimentos" onClick={irPara('home', 'depoimentos')}>Depoimentos</a></li>
+        <li><a href="#rodape" onClick={irPara(paginaAtual, 'rodape')}>Contato</a></li>
       </ul>
 
       {/* Campo de Contato de WhatsApp */}
@@ -58,11 +63,10 @@ function Navbar({ onAbrirContato }) {
 
       <div className={`mobile-menu${menuAberto ? ' aberto' : ''}`}>
         <ul>
-          <li><a href="#hero" onClick={fecharMenu}>Início</a></li>
-          <li><a href="#sobre" onClick={fecharMenu}>Sobre</a></li>
-          <li><a href="#imoveis" onClick={fecharMenu}>Imóveis</a></li>
-          <li><a href="#depoimentos" onClick={fecharMenu}>Depoimentos</a></li>
-          <li><a href="#rodape" onClick={fecharMenu}>Contato</a></li>
+          <li><a href="#hero" onClick={irPara('home', 'hero')}>Início</a></li>
+          <li><a href="#sobre" onClick={irPara('home', 'sobre')}>Sobre</a></li>
+          <li><a href="#depoimentos" onClick={irPara('home', 'depoimentos')}>Depoimentos</a></li>
+          <li><a href="#rodape" onClick={irPara(paginaAtual, 'rodape')}>Contato</a></li>
         </ul>
 
         {/* Contato do WhatsApp */}
