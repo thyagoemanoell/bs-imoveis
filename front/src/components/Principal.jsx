@@ -236,10 +236,10 @@ function Principal({ onNavegar }) {
               <div className="ci-preco">R$ 850.000</div>
               <div className="ci-nome">Apartamento – Vila Mariana</div>
               <div className="ci-infos">
-                <span>🛏 2 quartos</span>
-                <span>🛁 1 suíte</span>
-                <span>📐 66m²</span>
-                <span>🚗 1 vaga</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>🛁 Nº de Banheiros</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -260,8 +260,8 @@ function Principal({ onNavegar }) {
               <div className="ci-preco">R$ 1.650.000</div>
               <div className="ci-nome">Casa em Condomínio – Alphaville</div>
               <div className="ci-infos">
-                <span>📍 3 suítes</span>
-                <span>📐 160m²</span>
+                <span>📍 Localização</span>
+                <span>📐 Metragem (m²)</span>
               </div>
             </div>
           </div>
@@ -287,10 +287,10 @@ function Principal({ onNavegar }) {
               </div>
               <div className="ci-nome">Apartamento – Pinheiros</div>
               <div className="ci-infos">
-                <span>🛏 2 quartos</span>
-                <span>🛁 1 suíte</span>
-                <span>📐 75m²</span>
-                <span>🚗 1 vaga</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>🛁 Nº de Banheiros</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>

@@ -99,10 +99,10 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 850.000</div>
               <div className="ci-nome">Apartamento – Vila Mariana</div>
               <div className="ci-infos">
-                <span>🛏 2 quartos</span>
-                <span>🛁 1 suíte</span>
-                <span>📐 66m²</span>
-                <span>🚗 1 vaga</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>🛁 Nº de Banheiros</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -121,9 +121,9 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 1.650.000</div>
               <div className="ci-nome">Casa em Condomínio – Alphaville</div>
               <div className="ci-infos">
-                <span>🛏 3 suítes</span>
-                <span>📐 160m²</span>
-                <span>🚗 2 vagas</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@ function PaginaImoveis() {
               </div>
               <div className="ci-nome">Apartamento – Pinheiros</div>
               <div className="ci-infos">
-                <span>🛏 2 quartos</span>
-                <span>🛁 1 suíte</span>
-                <span>📐 75m²</span>
-                <span>🚗 1 vaga</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>🛁 Nº de Banheiros</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -166,8 +166,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 120.000</div>
               <div className="ci-nome">Lote – Loteamento São Gonçalo</div>
               <div className="ci-infos">
-                <span>📐 300m²</span>
-                <span>📍 São Luís, MA</span>
+                <span>📐 Metragem (m²)</span>
+                <span>📍 Localização</span>
               </div>
             </div>
           </div>
@@ -186,9 +186,9 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 320.000</div>
               <div className="ci-nome">Casa – Cohama</div>
               <div className="ci-infos">
-                <span>🛏 3 quartos</span>
-                <span>📐 110m²</span>
-                <span>🚗 1 vaga</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -209,8 +209,8 @@ function PaginaImoveis() {
               </div>
               <div className="ci-nome">Casa – Renascença</div>
               <div className="ci-infos">
-                <span>🛏 2 quartos</span>
-                <span>📐 90m²</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>📐 Metragem (m²)</span>
               </div>
             </div>
           </div>
@@ -229,8 +229,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 95.000</div>
               <div className="ci-nome">Lote – Loteamento Belém</div>
               <div className="ci-infos">
-                <span>📐 250m²</span>
-                <span>📍 Belém, PA</span>
+                <span>📐 Metragem (m²)</span>
+                <span>📍 Localização</span>
               </div>
             </div>
           </div>
@@ -249,10 +249,10 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 980.000</div>
               <div className="ci-nome">Sobrado – Ponta D'Areia</div>
               <div className="ci-infos">
-                <span>🛏 4 quartos</span>
-                <span>🛁 2 suítes</span>
-                <span>📐 220m²</span>
-                <span>🚗 2 vagas</span>
+                <span>🛏 Nº de Quartos</span>
+                <span>🛁 Nº de Banheiros</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens </span>
               </div>
             </div>
           </div>
@@ -271,8 +271,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 550.000</div>
               <div className="ci-nome">Sala Comercial – Centro</div>
               <div className="ci-infos">
-                <span>📐 55m²</span>
-                <span>🚗 1 vaga</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -290,8 +290,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 550.000</div>
               <div className="ci-nome">Sala Comercial – Centro</div>
               <div className="ci-infos">
-                <span>📐 55m²</span>
-                <span>🚗 1 vaga</span>
+                <span>📐 Metragem (m²)</span>
+                <span>🚗 Nº de Garagens</span>
               </div>
             </div>
           </div>
