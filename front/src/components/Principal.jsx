@@ -10,10 +10,7 @@ const WaIcon = () => (
 function Principal({ onNavegar }) {
   return (
     <>
-      {/* ═══════════════════════════════════
-          HERO
-          EDITAR: eyebrow, título, subtítulo, botões e foto de fundo
-      ════════════════════════════════════ */}
+      {/* Cabeçalho */}
       <section id="hero">
         <img src={casaHero} alt="Imóvel de destaque" className="hero-bg" />
         <div className="hero-overlay" />
@@ -141,7 +138,7 @@ function Principal({ onNavegar }) {
 
             <p className="sobre-bio">
               Especialista do grupo de loteamentos <strong>São Gonçalo</strong>, atuando nos mercados de <strong>São Luís - MA, Belém - PA e Teresina - PI</strong>, com foco no segmento de loteamentos.
-              Atuação profissional é pautada por três príncipios instituicionais: <strong>transparência nas negociações, segurança júridica e patrimonial, e confiabilidade em todas as etapas do processo de aquisição.</strong>
+              Atuação profissional é pautada por três príncipios instituicionais: <strong>transparência nas negociações, segurança júridica e patrimonial, e confiabilidade em todas as etapas do processo de aquisição. </strong>
               O atendimento é conduzido de forma consultiva e personalizada, com o objetivo de assegurar que cada cliente tenha acesso às melhores oportunidades do mercado, aliado a um suporte técnico qualificado do início ao fim da negociação.
               Nosso compromisso é viabilziar, com solidez e segurança, a realização de um dos maiores objetivos de vida: a conquista da casa própria. 
             </p>
@@ -184,7 +181,8 @@ function Principal({ onNavegar }) {
 
               <div className="dif-item">
                 <svg className="dif-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 0013.5 0v-4.5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
                 </svg>
                 <div className="dif-nome">Pós-venda</div>
                 <div className="dif-desc">Suporte mesmo após a conclusão do negócio.</div>

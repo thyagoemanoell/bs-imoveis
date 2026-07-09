@@ -76,10 +76,7 @@ function PaginaImoveis() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════
-          LISTA COMPLETA DE IMÓVEIS
-          EDITAR: copie/cole um "card-imovel" para adicionar mais imóveis
-      ════════════════════════════════════ */}
+      {/* Listagem de Imóveis */}
       <section id="imoveis-lista">
         <p className="pagina-imoveis-contagem">9 imóveis encontrados</p>
 
