@@ -417,6 +417,7 @@ nav {
   border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.8rem;
 }
 .ci-infos span { display: flex; align-items: center; gap: 4px; }
+.ci-icon { width: 14px; height: 14px; object-fit: contain; flex-shrink: 0; }
 
 /* ═══════════════════════════════════
    PÁGINA — TODOS OS IMÓVEIS

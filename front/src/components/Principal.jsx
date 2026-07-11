@@ -1,5 +1,10 @@
 import casaHero from '../assets/img/casa-hero.jpg';
 import fotoCorretor from '../assets/foto perfil/Captura de Tela 2026-06-26 às 05.50.52.png';
+import iconCama from '../icons/cama-de-casal.png';
+import iconBanheiro from '../icons/banheiro-publico.png';
+import iconMetragem from '../icons/governante.png';
+import iconGaragem from '../icons/garagem.png';
+import iconLocalizacao from '../icons/pino-de-localizacao.png';
 
 const WaIcon = () => (
   <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -234,10 +239,10 @@ function Principal({ onNavegar }) {
               <div className="ci-preco">R$ 850.000</div>
               <div className="ci-nome">Apartamento – Vila Mariana</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>🛁 Nº de Banheiros</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconBanheiro} alt="Banheiros" className="ci-icon" /> Nº de Banheiros</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -258,8 +263,8 @@ function Principal({ onNavegar }) {
               <div className="ci-preco">R$ 1.650.000</div>
               <div className="ci-nome">Casa em Condomínio – Alphaville</div>
               <div className="ci-infos">
-                <span>📍 Localização</span>
-                <span>📐 Metragem (m²)</span>
+                <span><img src={iconLocalizacao} alt="Localização" className="ci-icon" /> Localização</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
               </div>
             </div>
           </div>
@@ -285,10 +290,10 @@ function Principal({ onNavegar }) {
               </div>
               <div className="ci-nome">Apartamento – Pinheiros</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>🛁 Nº de Banheiros</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconBanheiro} alt="Banheiros" className="ci-icon" /> Nº de Banheiros</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
