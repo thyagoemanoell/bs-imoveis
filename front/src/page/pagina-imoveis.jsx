@@ -1,3 +1,9 @@
+import iconCama from '../icons/cama-de-casal.png';
+import iconBanheiro from '../icons/banheiro-publico.png';
+import iconMetragem from '../icons/governante.png';
+import iconGaragem from '../icons/garagem.png';
+import iconLocalizacao from '../icons/pino-de-localizacao.png';
+
 const IconCasa = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="0.9">
     <path strokeLinecap="round" strokeLinejoin="round" d="M3 9.75L12 3l9 6.75V21H3V9.75z" />
@@ -96,15 +102,15 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 850.000</div>
               <div className="ci-nome">Apartamento – Vila Mariana</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>🛁 Nº de Banheiros</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconBanheiro} alt="Banheiros" className="ci-icon" /> Nº de Banheiros</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 2 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -118,14 +124,14 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 1.650.000</div>
               <div className="ci-nome">Casa em Condomínio – Alphaville</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 3 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -141,15 +147,15 @@ function PaginaImoveis() {
               </div>
               <div className="ci-nome">Apartamento – Pinheiros</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>🛁 Nº de Banheiros</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconBanheiro} alt="Banheiros" className="ci-icon" /> Nº de Banheiros</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 4 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -163,13 +169,13 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 120.000</div>
               <div className="ci-nome">Lote – Loteamento São Gonçalo</div>
               <div className="ci-infos">
-                <span>📐 Metragem (m²)</span>
-                <span>📍 Localização</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconLocalizacao} alt="Localização" className="ci-icon" /> Localização</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 5 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -183,14 +189,14 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 320.000</div>
               <div className="ci-nome">Casa – Cohama</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 6 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -206,13 +212,13 @@ function PaginaImoveis() {
               </div>
               <div className="ci-nome">Casa – Renascença</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>📐 Metragem (m²)</span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 7 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -226,13 +232,13 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 95.000</div>
               <div className="ci-nome">Lote – Loteamento Belém</div>
               <div className="ci-infos">
-                <span>📐 Metragem (m²)</span>
-                <span>📍 Localização</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconLocalizacao} alt="Localização" className="ci-icon" /> Localização</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 8 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -246,15 +252,15 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 980.000</div>
               <div className="ci-nome">Sobrado – Ponta D'Areia</div>
               <div className="ci-infos">
-                <span>🛏 Nº de Quartos</span>
-                <span>🛁 Nº de Banheiros</span>
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens </span>
+                <span><img src={iconCama} alt="Quartos" className="ci-icon" /> Nº de Quartos</span>
+                <span><img src={iconBanheiro} alt="Banheiros" className="ci-icon" /> Nº de Banheiros</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
 
-          
+
           {/* 9 campo de cadastro do imovel */}
           <div className="card-imovel">
             <div className="ci-img">
@@ -268,8 +274,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 550.000</div>
               <div className="ci-nome">Sala Comercial – Centro</div>
               <div className="ci-infos">
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>
@@ -287,8 +293,8 @@ function PaginaImoveis() {
               <div className="ci-preco">R$ 550.000</div>
               <div className="ci-nome">Sala Comercial – Centro</div>
               <div className="ci-infos">
-                <span>📐 Metragem (m²)</span>
-                <span>🚗 Nº de Garagens</span>
+                <span><img src={iconMetragem} alt="Metragem" className="ci-icon" /> Metragem (m²)</span>
+                <span><img src={iconGaragem} alt="Garagens" className="ci-icon" /> Nº de Garagens</span>
               </div>
             </div>
           </div>

@@ -33,9 +33,11 @@ function App() {
   return (
     <>
       <Navbar onAbrirContato={() => setContatoAberto(true)} paginaAtual={pagina} onNavegar={navegar} />
-      {pagina === 'imoveis'
-        ? <PaginaImoveis />
-        : <Principal onNavegar={navegar} />}
+      <div key={pagina} className="page-enter">
+        {pagina === 'imoveis'
+          ? <PaginaImoveis />
+          : <Principal onNavegar={navegar} />}
+      </div>
       <Footer />
       <Contato aberto={contatoAberto} onFechar={() => setContatoAberto(false)} />
     </>

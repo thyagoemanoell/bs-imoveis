@@ -46,7 +46,7 @@ function Navbar({ onAbrirContato, paginaAtual, onNavegar }) {
       {/* Campo de Contato de WhatsApp */}
       <a className="nav-wa" href="https://wa.me/5598984655966" target='blank' rel="noreferrer">
         <WaIcon />
-        (98) 98465-5966
+        WhatsApp
       </a>
 
       {/* Menu Hamburguer quando estiver em responsividade */}
