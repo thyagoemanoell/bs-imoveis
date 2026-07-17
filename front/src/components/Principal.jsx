@@ -22,7 +22,7 @@ function Principal({ onNavegar }) {
 
           {/* campo título */}
           <h1 className="hero-title">
-            Mais que imóveis,<br />realizo <span className="destaque">sonhos.</span>
+            Mais que imóveis,<br />realizando <span className="destaque">sonhos.</span>
           </h1>
 
           {/* campo subtítulo */}
@@ -131,15 +131,15 @@ function Principal({ onNavegar }) {
 
             {/* Campo do sobre mim do corretor  */}
             <h2 className="sobre-titulo">
-              Prazer, eu sou
+              Prazer, me chamo
               <span className="destaque">Bruno Sena.</span>
-              <span className="creci">CRECI 6871</span>
+              <span className="creci">CRECI-MA 6871-F</span>
             </h2>
 
             {/* campo de biografia do corretor */}
 
             <p className="sobre-bio">
-              Especialista do grupo de loteamentos <strong>São Gonçalo</strong>, atuando nos mercados de <strong>São Luís - MA, Belém - PA e Teresina - PI</strong>, com foco no segmento de loteamentos.
+              Especialista do grupo de loteamentos <strong>São Gonçalo</strong>, atuando nas grandes cidades como: <strong>São Luís - MA, Belém - PA e Teresina - PI</strong>, com o foco no segmento de loteamentos.
               Atuação profissional é pautada por três príncipios instituicionais: <strong>transparência nas negociações, segurança júridica e patrimonial, e confiabilidade em todas as etapas do processo de aquisição. </strong>
               O atendimento é conduzido de forma consultiva e personalizada, com o objetivo de assegurar que cada cliente tenha acesso às melhores oportunidades do mercado, aliado a um suporte técnico qualificado do início ao fim da negociação.
               Nosso compromisso é viabilziar, com solidez e segurança, a realização de um dos maiores objetivos de vida: a conquista da casa própria. 

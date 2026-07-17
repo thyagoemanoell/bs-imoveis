@@ -78,7 +78,7 @@ function Navbar({ onAbrirContato, paginaAtual, onNavegar }) {
           onClick={fecharMenu}
         >
           <WaIcon />
-          (98) 98465-5966
+          WhatsApp
         </a>
       </div>
     </nav>

@@ -131,6 +131,7 @@ function Footer() {
 
         {/* campo do ano e nome no copyright */}
         <div className="footer-copy">© 2026 Bruno Sena. Todos os direitos reservados.</div>
+        
 
         <div className="footer-social-wrap">
           <span className="footer-social-label">Me siga nas redes sociais</span>

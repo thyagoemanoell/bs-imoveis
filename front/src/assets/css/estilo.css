@@ -142,6 +142,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   transition: background 0.2s, transform 0.15s;
+  justify-content: center;
 }
 .btn-gold:hover { background: var(--ouro-claro); transform: translateY(-2px); }
 
@@ -285,8 +286,9 @@ nav {
 .sobre-titulo .destaque { color: var(--ouro); display: block; }
 
 .creci{
-  font-size: 18px;
-  margin-left: auto;
+  display: flex;
+  font-size: 12px;
+  margin-top: 12px;
 }
 
 .sobre-bio {
