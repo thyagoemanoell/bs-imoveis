@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import casaHero from '../assets/img/casa-hero.jpg';
 import fotoCorretor from '../assets/foto perfil/Captura de Tela 2026-06-26 às 05.50.52.png';
 import iconCama from '../icons/cama-de-casal.png';
@@ -6,7 +7,22 @@ import iconMetragem from '../icons/governante.png';
 import iconGaragem from '../icons/garagem.png';
 import iconLocalizacao from '../icons/pino-de-localizacao.png';
 
+// EDITAR: conforme os vídeos de depoimentos forem gravados, adicione um item para cada um aqui
+const videosDepoimento = [1, 2, 3, 4, 5, 6];
+const VIDEOS_POR_PAGINA = 2;
+
 function Principal({ onNavegar }) {
+  const [depPagina, setDepPagina] = useState(0);
+  const totalPaginasDep = Math.ceil(videosDepoimento.length / VIDEOS_POR_PAGINA);
+
+  const depAnterior = () => setDepPagina((p) => (p - 1 + totalPaginasDep) % totalPaginasDep);
+  const depProximo = () => setDepPagina((p) => (p + 1) % totalPaginasDep);
+
+  const videosVisiveis = videosDepoimento.slice(
+    depPagina * VIDEOS_POR_PAGINA,
+    depPagina * VIDEOS_POR_PAGINA + VIDEOS_POR_PAGINA
+  );
+
   return (
     <>
       {/* Cabeçalho */}
@@ -28,7 +44,7 @@ function Principal({ onNavegar }) {
           {/* campo subtítulo */}
           <p className="hero-sub">
             Especialista em ajudar você a comprar, vender ou alugar
-            o imóvel ideal com segurança, transparência e as melhores condições.
+            o imóvel ideal com segurança, com transparência e com as melhores condições.
           </p>
 
           <div className="hero-btns">
@@ -131,7 +147,7 @@ function Principal({ onNavegar }) {
 
             {/* Campo do sobre mim do corretor  */}
             <h2 className="sobre-titulo">
-              Prazer, me chamo
+              Prazer, me chamo 
               <span className="destaque">Bruno Sena.</span>
               <span className="creci">CRECI-MA 6871-F</span>
             </h2>
@@ -307,68 +323,33 @@ function Principal({ onNavegar }) {
 
         <h2 className="dep-titulo">O que meus clientes dizem</h2>
 
-        <div className="dep-grid">
+        <div className="dep-carousel">
+          <button className="dep-seta dep-seta-esq" onClick={depAnterior} aria-label="Depoimento anterior" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
 
-          {/* 1 depoimento de cliente */}
+          <div className="dep-grid" key={depPagina}>
 
-          <div className="card-dep">
-            <span className="dep-aspas">"</span>
-            
-            {/* campo texto */}
+            {/* EDITAR: espaços reservados para os vídeos de depoimentos (a inserir em breve) */}
 
-            <p className="dep-texto">
-              Excelente profissional! Me ajudou em todo o processo de compra do
-              meu apartamento, sempre muito atencioso e transparente.
-            </p>
-            <div className="dep-autor">
-
-              {/* EDITAR: substitua por <img src="foto.jpg"> ou use emoji/iniciais */}
-
-              <div className="dep-foto">👤</div>
-              <div>
-                
-                {/* campo de nome e cidade */}
-
-                <div className="dep-nome">Juliana S.</div>
-                <div className="dep-cidade">São Paulo, SP</div>
+            {videosVisiveis.map((v) => (
+              <div className="card-dep dep-video-placeholder" key={v}>
+                <div className="dep-video-slot">
+                  🎬
+                  <span className="dep-video-label">Vídeo {v}</span>
+                </div>
               </div>
-            </div>
+            ))}
+
           </div>
 
-          {/* 2 depoimento de cliente */}
-
-          <div className="card-dep">
-            <span className="dep-aspas">"</span>
-            <p className="dep-texto">
-              Vendeu meu imóvel em menos tempo do que eu esperava e pelo melhor
-              preço. Super recomendo a todos!
-            </p>
-            <div className="dep-autor">
-              <div className="dep-foto">👤</div>
-              <div>
-                <div className="dep-nome">Carlos A.</div>
-                <div className="dep-cidade">São Paulo, SP</div>
-              </div>
-            </div>
-          </div>
-
-          {/* 3 depoimento de cliente */}
-
-          <div className="card-dep">
-            <span className="dep-aspas">"</span>
-            <p className="dep-texto">
-              Atendimento impecável do início ao fim. Me senti segura em cada
-              etapa da negociação. Com certeza vou indicar!
-            </p>
-            <div className="dep-autor">
-              <div className="dep-foto">👤</div>
-              <div>
-                <div className="dep-nome">Fernanda L.</div>
-                <div className="dep-cidade">São Paulo, SP</div>
-              </div>
-            </div>
-          </div>
-
+          <button className="dep-seta dep-seta-dir" onClick={depProximo} aria-label="Próximo depoimento" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
         </div>
       </section>
     </>

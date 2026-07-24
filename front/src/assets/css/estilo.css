@@ -486,11 +486,41 @@ nav {
   color: var(--azul-escuro); margin-bottom: 2.5rem;
 }
 
-.dep-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
+.dep-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
+
+.dep-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  animation: dep-fade 0.35s ease;
+}
+
+@keyframes dep-fade {
+  from { opacity: 0; transform: translateX(6px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.dep-seta {
+  flex-shrink: 0;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ouro);
+  background: var(--branco);
+  color: var(--ouro);
+  padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dep-seta svg { width: 20px; height: 20px; }
+
+.dep-seta:hover { background: var(--ouro); color: var(--branco); }
 
 .card-dep {
   background: var(--cinza-bg);
@@ -522,6 +552,29 @@ nav {
 
 .dep-nome { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--azul-escuro); }
 .dep-cidade { font-size: 0.75rem; color: var(--cinza-leve); margin-top: 2px; }
+
+.dep-video-placeholder {
+  padding: 0; overflow: hidden;
+  aspect-ratio: 16 / 10;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.dep-video-slot {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+  background: repeating-linear-gradient(
+    45deg, var(--cinza-bg), var(--cinza-bg) 10px, #e4e9ee 10px, #e4e9ee 20px
+  );
+  color: var(--cinza-leve); font-size: 2rem;
+  border: 2px dashed #c8d4e0;
+  border-radius: 8px;
+}
+
+.dep-video-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem; font-weight: 700;
+  color: var(--cinza-leve);
+}
 
 /* ═══════════════════════════════════
    CTA STRIP
